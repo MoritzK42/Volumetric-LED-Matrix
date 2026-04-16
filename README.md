@@ -46,10 +46,10 @@ The choosen BLDC ESC was rather cheap and especially with a weak power supply, t
 The 5 V USB-C power supply must be strong. Not all power supplys work. Anker power banks and supplys have tested good for purpose of powering the volumetric led matrix.
 Sometimes the animations or pictures show small glitches. This is a known issue still to be solved.
 The filament for the wireless coil spool holders must be capable to withstand higher temperatures without bending itself.
-Also, a 1200 uF polymer capacitor was added between USB-C 5 V and GND to further improve stability.
+Also, a 1200 uF polymer capacitor was added between USB-C 5 V and GND to further improve stability. Two 22 uf 0805 ceramic capacitors have been added to the base ESP32 input in parallel to the 100 nf and 10 uf decoupling capacitors since there have been issues with the ESP32 crashing when sending wireless commands to the disc ESP32. This issue may have been fixed also by reducing the TX power level in software.
 
 ## Software and operation
-The Bitmap Converter is written in C# and used to convert the Blender generated bitmaps of a frame or animation into a single header file containing a 4-dimensional array. 
+The Bitmap converter is written in C# and used to convert the Blender generated bitmaps of a frame or animation into a single header file containing a 4-dimensional array. 
 
 The dimensions of the array have the following function:
 ```c
