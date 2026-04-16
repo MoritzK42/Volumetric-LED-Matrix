@@ -52,7 +52,7 @@ The Bitmap Converter is written in C# and used to convert the Blender generated 
 
 The dimensions of the array have the following function:
 ```c
-﻿const uint8_t calibrationCo[8][1][96][32] =
+﻿const uint8_t calibration[8][1][96][32] =
 ```
 
 1. brightness compensation
