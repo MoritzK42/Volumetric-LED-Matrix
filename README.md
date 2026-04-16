@@ -5,7 +5,8 @@ Unfortunately, the matrix suffers from imbalance and thus heavy vibrations when 
 The choosen BLDC ESC was rather cheap and especially with a weak power supply, the motor cannot be started up.
 The 5 V USB-C power supply must be strong. Not all power supplys work. Anker power banks and supplys have tested good for purpose of powering the volumetric led matrix.
 Sometimes the animations or pictures show small glitches. This is a known issue still to be solved.
-The filament for the wireless coil spool holders must be capable to withstand higher temperatures without bending itself. 
+The filament for the wireless coil spool holders must be capable to withstand higher temperatures without bending itself.
+Also, a 1200 uF polymer capacitor was added between USB-C 5 V and GND to further improve stability.
 
 The screws used are M2. 
 
