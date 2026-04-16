@@ -35,7 +35,8 @@ The ESC module was bought an AliExpress: https://de.aliexpress.com/item/10050080
 
 The BLDC motor was bought on AliExpress: https://de.aliexpress.com/item/1005006110056005.html?spm=a2g0o.order_list.order_list_main.57.53175c5fBHUX8V&gatewayAdapt=glo2deu
 
-The 16x16 LED Matrix was assembled by JLCPCB PCBA service
+The 16x16 LED Matrix was assembled by JLCPCB PCBA service.
+
 The other circuit boards where assembled by hand.
 
 The wireless coils where glued into the holders (make sure to remove the small piece of tape beforehand) with superglue.
