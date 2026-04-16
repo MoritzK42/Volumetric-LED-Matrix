@@ -25,7 +25,7 @@ All screws must be assembled with loctite for reliable long term use.
 
 The used wireless module is 5V / 1A from AliExpress: https://de.aliexpress.com/item/1005006105734663.html?spm=a2g0o.order_list.order_list_main.82.53175c5fBHUX8V&gatewayAdapt=glo2deu
 
-The LED RGB ring is 16 LEDs WS2812 RGB module from AliExpress: https://de.aliexpress.com/item/1005006579026411.html?spm=a2g0o.productlist.main.55.20c8rBMUrBMUBh&algo_pvid=e281a54f-07bf-4cd3-a832-4d5de2bb4440&algo_exp_id=e281a54f-07bf-4cd3-a832-4d5de2bb4440-52&pdp_ext_f=%7B%22order%22%3A%2244%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%213.18%211.59%21%21%2124.98%2112.49%21%40210390b817763413623183330e4f40%2112000037719757056%21sea%21DE%212911574338%21X%211%210%21n_tag%3A-29919%3Bd%3A87806434%3Bm03_new_user%3A-29895&curPageLogUid=T5dw2yNWnfpz&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006579026411%7C_p_origin_prod%3A
+The LED RGB ring is 16 LEDs WS2812 RGB module from AliExpress: https://www.aliexpress.com/item/1005006579026411.html?spm=a2g0o.order_list.order_list_main.15.7f645c5fj35ANH
 
 The glass dome was bought on AliExpress
 
