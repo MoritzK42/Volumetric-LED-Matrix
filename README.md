@@ -11,6 +11,7 @@ The matrix can display 3D animations on a spinning 16x16 LED matrix, and is powe
 The 3D-Objects can be created in blender. They are then sliced and photographed in 1/96 increments of rotation. To create animations, the process must be repeated with all frames. The naming sceme which can be set in Blender when exporting has to be the following: "nameXX_YY", whereas the XX indicates the number of frame in the animation, and YY indicates the number of subframe in frame. A leading 0 must be added for numbers below 10. They must be exported as singular bitmaps and then they must converted into suitable arrays by the bitmap converter tool. The converted arrays must then be included as header files to the volumetric led matrix disc code.
 
 ## Hardware
+![more pictures can be found in the pictures folder](https://github.com/MoritzK42/Volumetric-LED-Matrix/blob/main/pictures/collage.png)
 All used machine screws used are M2 with philips head bought on AliExpress. The used lengths are the following:
 
 For disc to motor: 4 mm
