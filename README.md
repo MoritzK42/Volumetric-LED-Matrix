@@ -50,7 +50,10 @@ Also, a 1200 uF polymer capacitor was added between USB-C 5 V and GND to further
 ## Software and operation
 The Bitmap Converter is written in C# and used to convert the Blender generated bitmaps of a frame or animation into a single header file containing a 4-dimensional array. 
 
-The dimensions of the array have the following function: 
+The dimensions of the array have the following function:
+```c
+﻿const uint8_t calibrationCo[8][1][96][32] =
+```
 
 1. brightness compensation
 2. frame of animation (1 for single 3D Image)
