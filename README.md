@@ -1,3 +1,4 @@
+![Uploading IMG_20260416_130218_015.jpg…]()
 This project was inspired by mitxelas tiny volumetric LED display and Nick electronics volumetric lamp project. 
 The Matrix can display 3D animations on a spinning 16x16 LED matrix. The animations can be created and rendered and expoted as singular bitmaps in blender, then they must converted into suitable arrays by the bitmap converter tool. The converted arrays must then be included as header files to the volumetric led matrix disc code. 
 Unfortunately, the matrix suffers from imbalance and thus heavy vibrations when spun. Thus, a 50 mm diameter and 52 mm tall piece of round steel was integrated into to the base as counterweight, aswell as a silicone pad on the bottom to further dampen vibrations.
