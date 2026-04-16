@@ -5,18 +5,30 @@ The choosen BLDC ESC was rather cheap and especially with a weak power supply, t
 The 5 V USB-C power supply must be strong. Not all power supplys work. Anker power banks and supplys have tested good for purpose of powering the volumetric led matrix.
 Sometimes the animations or pictures show small glitches. This is a known issue still to be solved.
 The filament for the wireless coil spool holders must be capable to withstand higher temperatures without bending itself. 
+
 The screws used are M2. 
+
 For disc to motor: 4 mm
+
 For upper coil holder to PCB: 5 mm
+
 For motor and lower coil holder: 8 mm
+
 The motor stands on 4 mm standoffs, which are spaced with M2 washers to not pierce the motor coils.
+
 All screws must be assembled with loctite for reliable long term use.
 
+
 The used wireless module is wireless module 5V / 1A from AliExpress
+
 The LED RGB ring is 16 LEDs WS2812 RGB module from AliExpress
+
 The glass dome was bought on AliExpress
+
 The 12 V mini step up module was bought on AliExpress
+
 The ESC module was bought an AliExpress
+
 The BLDC motor was bought on AliExpress
 
 The 16x16 LED Matrix was assembled by JLCPCB PCBA service
