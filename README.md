@@ -4,7 +4,7 @@
 ## About the project
 This project was inspired by mitxelas tiny volumetric LED display and Nick electronics volumetric lamp project.
 It was created in the context of the elective project of the Hochschule für angewandte Wissenschaften (HAW) Hamburg, Germany.
-The Matrix can display 3D animations on a spinning 16x16 LED matrix, and powered via USB-C. 
+The matrix can display 3D animations on a spinning 16x16 LED matrix, and is powered via USB-C. 
 
 
 ## Rendering animations in Blender
