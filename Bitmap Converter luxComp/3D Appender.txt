@@ -1,0 +1,100 @@
+public static class HeaderBlockBuilder
+{
+    /// <summary>
+    /// Baut den C-Array-Block für ein jagged byte[][][]:
+    /// const uint8_t name[d0][d1][d2] = { ... };
+    ///
+    /// - Ermittelt automatisch die Dimensionen (maximale Länge je Ebene).
+    /// - Füllt fehlende Werte (unregelmäßige Längen) mit 0 auf.
+    /// - Werte als Hex (0x..) oder dezimal ausgebbar.
+    /// - Nur String-Erzeugung; kein Datei-Zugriff.
+    /// </summary>
+    /// <param name="src">Jagged-Array byte[][][]</param>
+    /// <param name="arrayName">Name der C-Variable (z. B. "frame_SubFrame8Bit")</param>
+    /// <param name="asHex">true: 0xHH; false: Dezimal</param>
+    /// <param name="makeConst">true: "const" vor den Typ setzen</param>
+    /// <param name="cType">C-Typ, z. B. "uint8_t" oder "unsigned char"</param>
+    /// <param name="innerValuesPerLine">
+    /// Für Lesbarkeit: so viele Werte der innersten Dimension pro Zeile (0/negativ = keine Zeilenumbrüche innerhalb).
+    /// </param>
+    /// <returns>String mit dem C-Block</returns>
+    public static string BuildByte3DArrayBlock(
+        byte[][][] src,
+        string arrayName = "frame_SubFrame8Bit",
+        bool asHex = true,
+        bool makeConst = true,
+        string cType = "uint8_t",
+        int innerValuesPerLine = 16)
+    {
+        if (src == null) throw new ArgumentNullException(nameof(src));
+
+        // Dimensionen bestimmen (maximale Längen, da jagged)
+        int dim0 = src.Length;
+        int dim1 = 0;
+        int dim2 = 0;
+
+        for (int i = 0; i < dim0; i++)
+        {
+            var lvl1 = src[i];
+            if (lvl1 == null) continue;
+            dim1 = Math.Max(dim1, lvl1.Length);
+
+            for (int j = 0; j < lvl1.Length; j++)
+            {
+                var lvl2 = lvl1[j];
+                if (lvl2 == null) continue;
+                dim2 = Math.Max(dim2, lvl2.Length);
+            }
+        }
+
+        var sb = new StringBuilder(1024);
+        string constPrefix = makeConst ? "const " : "";
+
+        sb.AppendLine($"{constPrefix}{cType} {arrayName}[{dim0}][{dim1}][{dim2}] = {{");
+
+        for (int i = 0; i < dim0; i++)
+        {
+            sb.AppendLine("    {"); // Ebene 1 auf
+            var lvl1 = (i < src.Length) ? src[i] : null;
+
+            for (int j = 0; j < dim1; j++)
+            {
+                var lvl2 = (lvl1 != null && j < lvl1.Length) ? lvl1[j] : null;
+
+                sb.Append("        { ");
+
+                for (int k = 0; k < dim2; k++)
+                {
+                    byte value = 0;
+                    if (lvl2 != null && k < lvl2.Length)
+                        value = lvl2[k];
+
+                    string token = asHex ? $"0x{value:X2}" : value.ToString();
+                    sb.Append(token);
+
+                    if (k < dim2 - 1) sb.Append(", ");
+
+                    // Optionaler Zeilenumbruch für Lesbarkeit
+                    if (innerValuesPerLine > 0 && k < dim2 - 1 && (k + 1) % innerValuesPerLine == 0)
+                    {
+                        sb.AppendLine();
+                        sb.Append("          ");
+                    }
+                }
+
+                sb.Append(" }");
+                if (j < dim1 - 1) sb.Append(",");
+                sb.AppendLine();
+            }
+
+            sb.Append("    }");
+            if (i < dim0 - 1) sb.Append(",");
+            sb.AppendLine();
+        }
+
+        sb.AppendLine("};");
+        sb.AppendLine();
+
+        return sb.ToString();
+    }
+}
