@@ -1,0 +1,15 @@
+/*
+Bachelorprojekt 2025
+3D model STL files for volumetric led matrix
+
+Copyright (c) 2026 Clement Deng
+
+Permission is granted to use, copy, and modify this source code
+for private, non-commercial purposes only.
+
+Any commercial use, distribution, sublicensing, or inclusion
+in a commercial product or service is strictly prohibited
+without prior written permission from the copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+*/
