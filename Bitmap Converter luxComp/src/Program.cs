@@ -5,7 +5,7 @@ using System.Text;
 Bachelorprojekt 2025
 volumetric LED matrix base
 
-Copyright (c) 2026 2026 Moritz Koslowski, Bela Felsch
+Copyright (c) 2026 Moritz Koslowski, Bela Felsch
 
 Permission is granted to use, copy, and modify this source code
 for private, non-commercial purposes only.
