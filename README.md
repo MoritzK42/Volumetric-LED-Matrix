@@ -1,6 +1,6 @@
 # Volumetric LED Matrix
 ![](https://github.com/MoritzK42/Volumetric-LED-Matrix/blob/main/pictures/display_calibration.jpg)
-![](https://github.com/MoritzK42/Volumetric-LED-Matrix/blob/main/poster.jpg)
+![](https://github.com/MoritzK42/Volumetric-LED-Matrix/blob/main/pictures/poster.jpg)
 
 ## About the project
 This project was inspired by mitxelas tiny volumetric LED display and Nick electronics volumetric lamp project.
